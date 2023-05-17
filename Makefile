@@ -19,7 +19,7 @@ include config.make
 .PHONY: autograde
 autograde: seven_seg.exe 
 	./seven_seg.exe -M 3600 -o bench.csv -s 33554432 -f seven_seg_solution_c
-	./seven_seg.exe -M 3600 -o correctness.csv -v -s 32768 262144 -f seven_seg_solution_c
+	./seven_seg.exe -M 3600 -o correctness.csv -v -s 256 32768 262144 -f seven_seg_solution_c
 
 .PRECIOUS: $(BUILD)%.cpp
 .PRECIOUS: $(BUILD)%.s
