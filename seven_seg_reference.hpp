@@ -29,22 +29,31 @@ void __attribute__((optimize("O4"))) seven_segConversion(char *r, int32_t n)
         {
             case 1: 
                 r[pos]= 0x30;
+                break;
             case 2:
-                r[pos]= 0x6D; 
+                r[pos]= 0x6D;
+                break;
             case 3:
                 r[pos]= 0x79;
+                break;
             case 4:
                 r[pos]= 0x33;
+                break;
             case 5:
                 r[pos]= 0x5B;
+                break;
             case 6:
                 r[pos]= 0x5F;
+                break;
             case 7:
                 r[pos]= 0x70;
+                break;
             case 8:
                 r[pos]= 0x7F;
+                break;
             case 9:
                 r[pos]= 0x73;
+                break;
             default: 
                 r[pos]= 0x7e; 
         }
